@@ -1,0 +1,17 @@
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: lightgray;
+}
+
+body_signup {
+    margin: 500px;
+    margin-right: 50px;
+    margin-left: 400px;
+}
+
+body_login {
+    margin: 500px;
+    margin-right: 50px;
+    margin-left: 400px;
+}
+
+

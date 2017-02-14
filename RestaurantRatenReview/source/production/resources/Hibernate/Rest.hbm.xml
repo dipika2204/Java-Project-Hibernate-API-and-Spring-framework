@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.project2.Model.Rest" table="restaurant_details" catalog="restaurant">
+        <id name="restId" type="int">
+            <column name="restId" />
+            <generator class="identity" />
+        </id>
+        <property name="restName" type="string">
+            <column name="restName" length="50" not-null="true"  />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="50" not-null="true"/>
+        </property>
+        <property name="rate_avg" type="float">
+            <column name="rate_avg" not-null="true"/>
+        </property>
+        <property name="count" type="int">
+            <column name="count" length="11" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
